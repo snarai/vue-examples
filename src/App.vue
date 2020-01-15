@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <TestComp/> <!-- components:で定義した名前を追加します -->
+    <new-component/>
   </div>
 </template>
 
 <script>
-import TestComp from "./components/TestComp"; // 作ったVUeファイルのパスと名前に書き換えます。
+import NewComponent from "./components/NewComponent";
 
 export default {
   name: "App",
   components: {
-    TestComp // importの部分で定義した名前を記述します。
+    NewComponent
   }
 };
 </script>
