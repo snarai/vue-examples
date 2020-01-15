@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img width="25%" src="./assets/logo.png">
-    <HelloWorld msg="Hello Vue in CodeSandbox!" />
+    <TestComp/> <!-- components:で定義した名前を追加します -->
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import TestComp from "./components/TestComp"; // 作ったVUeファイルのパスと名前に書き換えます。
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    TestComp // importの部分で定義した名前を記述します。
   }
 };
 </script>
